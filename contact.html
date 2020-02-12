@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<style>
+    input[type=text],
+    select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    input[type=submit] {
+        width: 100%;
+        background-color: #605d5a;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    input[type=submit]:hover {
+        background-color: #605d5a;
+    }
+
+    div {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+    }
+</style>
+
+<body>
+    <div>
+        <div class="container-fluid">
+            <h2 text="center">聯絡我們</h2>
+
+            <label for="fname">姓名</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+            <label for="phone">電話</label>
+            <input type="text" id="phone" name="urphone" placeholder="Your phone..">
+
+            <label for="mail">eMail</label>
+            <input type="text" id="email" name="urmail" placeholder="Your email..">
+
+            <label for="kind">反應事項種類</label>
+            <select id="kind" name="kind">
+                <option value="product">產品問題</option>
+                <option value="money">價格問題</option>
+                <option value="service">服務問題</option>
+                <option value="other">其他事項</option>
+            </select>
+
+            <label for="lname">message</label>
+            <input type="text" id="msg" name="urmessage" placeholder="Your content..">
+
+
+            <input type="button" onclick="javascript:location.href='answer.html' " value="Submit">
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>
